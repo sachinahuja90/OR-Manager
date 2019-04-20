@@ -188,6 +188,8 @@ $(function () {
 	$('#reset').click(function () {
 		chrome.storage.local.set({ 'xpath': '' });
 		chrome.storage.local.set({ 'ObjectName': '' });
+		chrome.storage.local.set({'customName': ''});
+		chrome.storage.local.set({ 'webElement': '' });
 		reset();
 	})
 });
