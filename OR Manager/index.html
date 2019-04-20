@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Object Repository Manager</title>
+
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<style>
+		.cusor:hover{
+ 			cursor: pointer;
+		}
+
+		.label {
+  			color: black;
+  			padding: 7px;
+			  font-family: Arial;
+			  font-size: 12px;
+			  font-weight: bold;
+			  
+		}
+
+		.upload {
+			  background-color:  #cecec4;
+			  border-radius: 10px;
+			  display: inline-block;
+			  margin-left: 48px;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					OR Manager
+				</span>
+				<div class="clearfix"></div>
+				
+				<div id="section" class=" validate-input">
+					<div class="wrap-input100 input100-select subsection2">
+						<div>
+							<label style="color:  rgb(48, 42, 42);font-size:13px;font-weight: bold">Element name :</label>
+						</div>
+					</div>
+
+					<div class="wrap-input1001 validate-input subsection1">
+						<input type="text" id="propertyValue" placeholder="element to highlight">
+					</div>
+
+					<div id="icon2">
+							<i class="fa fa-lightbulb-o fa-lg cusor" id="highlight" title="Highlight"></i>
+						</div>
+				</div>
+				
+				<div class="clearfix"></div>
+				<div id="icons">
+					<div id="icon1">
+						<i class="fa fa-search cusor fa-lg"  id="inspect" title="Inspect"></i>
+					</div>
+					
+					<div id="icon3">
+						<i class="fa fa-refresh fa-lg cusor" id="reset" title="Reset"></i>	
+					</div>
+					<div id="icon4">
+						<i class="fa fa-stop-circle fa-lg cusor" id="stop" title="Stop"></i>	
+					</div>
+				</div>
+				<div class="clearfix"></div>
+
+				<div id="section6">
+					<div id="section7">
+						<label>Selection :</label>
+					</div>
+					<div class="wrap-input100 validate-input textbox4">
+						<input type="text" id="objectname" name="" placeholder="      element name" readonly>
+					</div>
+				</div>
+				<div class="wrap-input100 validate-input webelement">
+					<textarea style="resize: none;" class="input100 webelement_content" id="webelement" placeholder="Web Element" rows = "5" cols = "5" readonly></textarea>
+				</div>
+
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h9 class="panel-title">
+								Object Repository
+							</h9>
+						</div>
+						<!-- <div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="clearfix"></div> -->
+							
+								
+								<div class="wrap-input100 validate-input webelement">
+									<textarea style="resize: none;" class="input100 webelement_content" id="Repository" placeholder="Json File" rows = "15" cols = "10"  readonly></textarea>
+								</div>
+								
+
+								<div id="buttons">
+
+									<button class="_6j mvm _6wk _6wl _58mi _3ma _6o _6v" id="download11" title="Download JSON Object Repository">
+										<a id="downloadJSON"  class="btn"><img id="home" src="json.png" width="110"></a>
+										
+
+									</button>
+
+									<button class="_6j mvm  _6wl _59mi _3ma _6o _6v" id="download12" title="Download XML Object Repository">
+											<a id="downloadXML"  class="btn"><img id="home" src="xml.png" width="90"></a>
+											
+										</button>
+									
+									<button class="_6j mvm  _6wl _58mi _3ma _6o _6v" id="cancel" title="Reset Object Repository">
+										<a id="cancel"  class="btn"><img id="home" src="cancel.png" width="90"></a>
+									</button>
+
+								</div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+						<!--adding uploading file related html-->
+						<div id="file-content" class="centre">
+							<input type="file" name="file" id="file" class="inputfile" />
+							<label for="file" class="label upload"><img id="home" src="upload.png" width="400" height="33"></label>
+					</div>
+			</div>
+		</div>
+
+				
+				
+			</form>
+		</div>
+	</div>
+</div>
+
+
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	</script>
+	<script type="text/javascript" src="js/xml2json.js"></script>
+	<script src="js/xpath.js">	 </script>
+	
+<!--===============================================================================================-->
+	
+
+</body>
+</html>
